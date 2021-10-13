@@ -1,0 +1,86 @@
+#
+# SPDX-License-Identifier: MIT
+# 
+
+-Q src/ SPICY
+-R Frap/ Frap
+-Q protocols/ protocols
+
+# Frap Library Dependency
+Frap/Invariant.v
+Frap/Relations.v
+Frap/Sets.v
+
+src/AdversaryUniverse.v
+src/AdversarySafety.v
+src/Automation.v
+src/ChMaps.v
+src/IdealWorld.v
+src/Keys.v
+src/Maps.v
+src/MessageEq.v
+src/Messages.v
+src/MyPrelude.v
+src/RealWorld.v
+src/SafetyAutomation.v
+src/Simulation.v
+src/StepRelations.v
+src/SyntacticallySafe.v
+src/Tactics.v
+
+src/Theory/CipherTheory.v
+src/Theory/InvariantsTheory.v
+src/Theory/KeysTheory.v
+src/Theory/MessageEqTheory.v
+src/Theory/MessagesTheory.v
+src/Theory/NonceTracking.v
+src/Theory/UsersTheory.v
+
+src/ModelCheck/ModelCheck.v
+src/ModelCheck/UniverseInversionLemmas.v
+
+src/ModelCheck/Commutation.v
+src/ModelCheck/LabelsAlign.v
+src/ModelCheck/NoResends.v
+src/ModelCheck/ProtocolFunctions.v
+src/ModelCheck/RealWorldStepLemmas.v
+src/ModelCheck/SafeProtocol.v
+src/ModelCheck/SilentStepElimination.v
+src/ModelCheck/SteppingTactics.v
+
+# Protocol Invariant Exploration (alternative to traditional model checking)
+src/ModelCheck/InvariantSearch.v
+src/ModelCheck/InvariantSearchLemmas.v
+
+#############################################################################
+##  Protocol Verification
+#############################################################################
+
+protocols/ProtocolTemplate.v
+
+## Test Protocols
+protocols/ExampleProtocols.v
+protocols/Verification/ExampleProtocolsAutomated.v
+
+protocols/GenProto.v
+protocols/Verification/GenProtoSecure.v
+
+## Protocols from the paper
+## "Secret Sharing Protocol" from example section
+protocols/ShareSecretProtocolSymmetricEnc.v
+protocols/ShareSecretProtocolSymmetricEncIWRefine.v
+protocols/Verification/ShareSecretProtocolSymmetricEncSecure.v
+
+protocols/PGP.v
+protocols/Verification/PGPSecure.v
+
+protocols/SecureDNS.v
+protocols/Verification/SecureDNSSecure.v
+
+protocols/Aggregation.v
+protocols/Verification/AggregationSecure.v
+
+protocols/NetAuth.v
+protocols/Verification/NetAuthSecure.v
+
+protocols/Verification/PaperProtocolsAssumptions.v
