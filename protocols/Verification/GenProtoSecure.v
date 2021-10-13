@@ -71,7 +71,7 @@ Module MyProtocolSecure <: AutomatedSafeProtocolSS.
        mkKeys
     : core.
 
-  (* Set Ltac Profiling. *)
+  (* (* Set Ltac Profiling. *) *)
 
   Lemma safe_invariant :
     invariantFor

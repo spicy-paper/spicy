@@ -192,7 +192,7 @@ Module SecureDNSProtocolSecure <: AutomatedSafeProtocolSS.
     unfold lameAdv; autounfold; simpl; eauto.
   Qed.
 
-  Set Ltac Profiling.
+  (* Set Ltac Profiling. *)
 
   Lemma safe_invariant :
     invariantFor
@@ -218,8 +218,8 @@ Module SecureDNSProtocolSecure <: AutomatedSafeProtocolSS.
     all: exact 0 || auto.
   Qed.
 
-  Show Ltac Profile.
-  (* Show Ltac Profile "churn2". *)
+  (* Show Ltac Profile. *)
+  (* (* Show Ltac Profile. *)"churn2". *)
   
   Lemma U_good : @universe_starts_sane _ Unit b ru0.
   Proof.

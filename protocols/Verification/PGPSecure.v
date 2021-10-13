@@ -104,7 +104,7 @@ Module PGPProtocolSecure <: AutomatedSafeProtocolSS.
 
   Locate safety_inv.
 
-  Set Ltac Profiling.
+  (* Set Ltac Profiling. *)
 
   Lemma safe_invariant :
     invariantFor
@@ -131,7 +131,7 @@ Module PGPProtocolSecure <: AutomatedSafeProtocolSS.
     all: eauto.
   Qed.
 
-  Show Ltac Profile.
+  (* Show Ltac Profile. *)
       
   Lemma U_good : @universe_starts_sane _ Unit b ru0.
   Proof.

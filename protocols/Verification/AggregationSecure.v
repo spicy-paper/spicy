@@ -119,7 +119,7 @@ Module AggregationProtocolSecure <: AutomatedSafeProtocolSS.
     unfold lameAdv; autounfold; simpl; eauto.
   Qed.
 
-  Set Ltac Profiling.
+  (* Set Ltac Profiling. *)
 
   Lemma safe_invariant :
     invariantFor
@@ -146,7 +146,7 @@ Module AggregationProtocolSecure <: AutomatedSafeProtocolSS.
     all: exact 0 || contradiction || auto.
   Qed.
 
-  Show Ltac Profile.
+  (* Show Ltac Profile. *)
   
   Lemma U_good : @universe_starts_sane _ Unit b ru0.
   Proof.
